@@ -1,0 +1,17 @@
+{
+    "name": "personal-paper-database",
+    "version": "0.0.1",
+    "description": "PPDB is a paper notes management system to facilitate researchers efficiently take note and search among them.",
+    "license": "GNU AGPLv3",
+    "repository": "github:DavyVan/PersonalPaperDataBase",
+    "main": "app/js/main.js",
+    "scripts": {
+        "start": "tsc && electron .",
+        "build-ts": "tsc",
+        "build-app": ""
+    },
+    "devDependencies": {
+        "electron": "^12.0.1",
+        "typescript": "^4.2.3"
+    }
+}

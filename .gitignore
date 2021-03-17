@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+# FQ
+
+# This project is written purely in TypeScript so we can ignore all generated .js files
+build/

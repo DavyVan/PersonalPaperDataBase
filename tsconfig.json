@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "noEmitOnError": true,
+        "target": "ES6",
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "module": "ES6",
+        "outDir": "app/js/build"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
