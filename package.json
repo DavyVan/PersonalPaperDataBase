@@ -4,14 +4,19 @@
     "description": "PPDB is a paper notes management system to facilitate researchers efficiently take note and search among them.",
     "license": "GNU AGPLv3",
     "repository": "github:DavyVan/PersonalPaperDataBase",
-    "main": "app/js/main.js",
+    "main": "app/js/build/main.js",
+    "type": "commonjs",
     "scripts": {
         "start": "tsc && electron .",
         "build-ts": "tsc",
         "build-app": ""
     },
     "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^4.18.0",
+        "@typescript-eslint/parser": "^4.18.0",
         "electron": "^12.0.1",
+        "eslint": "^7.22.0",
+        "eslint-plugin-react": "^7.22.0",
         "typescript": "^4.2.3"
     }
 }

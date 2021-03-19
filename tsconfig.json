@@ -6,8 +6,10 @@
         "noImplicitAny": true,
         "strictNullChecks": true,
         "strictPropertyInitialization": true,
-        "module": "ES6",
-        "outDir": "app/js/build"
+        "module": "commonjs",
+        "outDir": "app/js/build",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
     },
     "exclude": [
         "node_modules"

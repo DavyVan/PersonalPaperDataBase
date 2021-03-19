@@ -108,3 +108,4 @@ dist
 
 # This project is written purely in TypeScript so we can ignore all generated .js files
 build/
+.vscode/
