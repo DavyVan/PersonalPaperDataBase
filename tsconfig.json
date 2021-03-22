@@ -10,6 +10,7 @@
         "outDir": "app/js/build",
         "moduleResolution": "node",
         "esModuleInterop": true,
+        "jsx": "react"
     },
     "exclude": [
         "node_modules"

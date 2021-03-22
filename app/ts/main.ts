@@ -1,37 +1,21 @@
 /* -------------------- This is the entry of this project ------------------- */
 
-const {app, BrowserWindow} = require("electron");
-const path = require("path");
+import { app, BrowserWindow } from "electron";
+import path from "path";
 
 app.whenReady().then(() => {
     const win = new BrowserWindow({
         width: 800,
         height: 600,
         webPreferences: {
-            preload: path.join(__dirname, "main.preload.js"),
             nodeIntegration: true,
+            contextIsolation: false,
+            enableRemoteModule: true
         }
     });
     win.loadFile("app/html/index.html");
     win.webContents.openDevTools({
         "mode": "detach"
-    });
-
-    app.on("activate", () => {
-        if (BrowserWindow.getAllWindows().length === 0) {
-            const win = new BrowserWindow({
-                width: 800,
-                height: 600,
-                webPreferences: {
-                    preload: "main.preload.js",
-                    nodeIntegration: true,
-                }
-            });
-            win.loadFile("app/html/index.html");
-            win.webContents.openDevTools({
-                "mode": "detach"
-            });
-        }
     });
 });
 
